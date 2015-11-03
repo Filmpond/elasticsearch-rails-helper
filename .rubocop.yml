@@ -1,0 +1,21 @@
+LineLength:
+  Max: 131
+
+MethodLength:
+  CountComments: false  # count full line comments?
+  Max: 15
+
+Encoding:
+  Description: 'Use UTF-8 as the source file encoding.'
+  Enabled: false
+
+AllCops:
+  Exclude:
+    - bin/**/*
+    - db/**/*
+    - config/**/*
+    - Rakefile
+    - script/**/*
+    - spec/factories/**/*
+    - spec/dummy/**/*
+    - !ruby/regexp /old_and_unused\.rb$/
