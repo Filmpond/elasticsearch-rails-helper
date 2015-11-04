@@ -9,7 +9,7 @@ require 'sprockets/railtie'
 # require "rails/test_unit/railtie"
 
 Bundler.require(*Rails.groups)
-require 'search_engine'
+require 'elastic_search_rails_helper'
 
 module Dummy
   class Application < Rails::Application
