@@ -15,4 +15,15 @@ Gem::Specification.new do |s|
   s.description = 'This engine provides a simple active model concern which allows a ' +
                   'class to mixin generic elastic search functionality.'
   s.files       = Dir['{app,config,db,lib}/**/*', 'Rakefile', 'README.md']
+
+  s.add_runtime_dependency 'rails', '~> 4.2'
+  s.add_runtime_dependency 'elasticsearch-model', '~> 0.1'
+  s.add_runtime_dependency 'elasticsearch', '~> 2.0'
+
+  s.add_development_dependency 'byebug'
+  s.add_development_dependency 'factory_girl_rails', '~> 4.2'
+  s.add_development_dependency 'rspec-rails', '~> 3.2'
+  s.add_development_dependency 'rubocop'
+  s.add_development_dependency 'simplecov'
+  s.add_development_dependency 'sqlite3', '~> 1.3'
 end

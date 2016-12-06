@@ -4,6 +4,8 @@ SimpleCov.start
 ENV['RAILS_ENV'] ||= 'test'
 
 require File.expand_path('../dummy/config/environment', __FILE__)
+
+require 'factory_girl'
 require 'rspec/rails'
 
 ENGINE_RAILS_ROOT = File.join(File.dirname(__FILE__), '../')
