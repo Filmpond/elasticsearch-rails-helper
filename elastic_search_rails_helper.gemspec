@@ -17,8 +17,8 @@ Gem::Specification.new do |s|
   s.files       = Dir['{app,config,db,lib}/**/*', 'Rakefile', 'README.md']
 
   s.add_runtime_dependency 'rails', '~> 4.2'
-  s.add_runtime_dependency 'elasticsearch-model', '~> 0.1'
-  s.add_runtime_dependency 'elasticsearch', '~> 2.0'
+  s.add_runtime_dependency 'elasticsearch-model', '~> 5.0'
+  s.add_runtime_dependency 'elasticsearch', '~> 5.0'
 
   s.add_development_dependency 'byebug'
   s.add_development_dependency 'factory_girl_rails', '~> 4.2'
