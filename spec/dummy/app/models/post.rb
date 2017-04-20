@@ -1,9 +1,9 @@
 class Post < ActiveRecord::Base
   include ElasticSearchRailsHelper::Searchable
 
-  mappings dynamic: 'false' do
-    indexes :title, type: 'string', boost: 10, analyzer: 'snowball'
-    indexes :body,  type: 'string', analyzer: 'snowball'
+  mapping dynamic: 'false' do
+    indexes :title, type: 'text', boost: 10, analyzer: 'snowball'
+    indexes :body,  type: 'text', analyzer: 'snowball'
   end
 
   def as_indexed_json(_options = {})
